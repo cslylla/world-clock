@@ -1,3 +1,21 @@
+/* General styles */
+
+/* Icons */
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
+}
+
+
+/* Typography */
 h1 {
+    text-align: center;
+}
+
+/* Sections */
+footer {
     text-align: center;
 }

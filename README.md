@@ -9,6 +9,7 @@
 ### 1. Key features
 
 - The **single-site** web page is built with **JavaScript**, HTML and CSS
+- For formatting the dates, I used the **moment.js** library
 
 ### 2. Usage
 
@@ -20,3 +21,4 @@
 
 - Visit the weather app [here](#)
 - Further info about [SheCodes](https://www.shecodes.io/)
+- Further info about the [moment.js library](https://cdnjs.com/libraries/moment.js)
