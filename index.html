@@ -7,17 +7,28 @@
     <!-- Icons -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+    <!--Styles-->
     <link rel="stylesheet" href="./css/style.css">
     <title>World Clock by cslylla</title>
 </head>
 <body>
 
     <main>
-        <h1>World Clock</h1>
+        <div class="title">
+            <span class="material-symbols-outlined">
+                language
+            </span>
 
-        <span class="material-symbols-outlined">
-            schedule
-        </span>
+            <h1>World Clock</h1>
+
+            <span class="material-symbols-outlined">
+                schedule
+            </span>
+        </div>  
 
         <select name="" id="">
             <option value="Zurich">Select a city...</option>
@@ -27,16 +38,23 @@
         </select>
 
         <div class="city">
-            <h2>Los Angeles</h2>
-            <div class="date">October 17th, 2022</div>
-            <div class="time">5:23:44 AM</div>
+            <div>
+                <h2>Los Angeles</h2>
+                <div class="date">October 17th, 2022</div>
+            </div>
+            <div class="time">5:23:44 <small>AM</small></div>
         </div>
+        
 
         <div class="city">
-            <h2>Dublin</h2>
-            <div class="date">October 17th, 2022</div>
-            <div class="time">5:23:44 AM</div>
+            <div>
+                <h2>Dublin</h2>
+                <div class="date">October 17th, 2022</div>
+            </div>
+            <div class="time">5:23:44 <small>AM</small></div>
         </div>
+        
+        
 
     </main>
     
