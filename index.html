@@ -36,25 +36,33 @@
 
         <select name="citySelector" id="citySelector">
             <option value="">Select a city...</option>
-            <option value="Europe/Zurich">Zürich</option>
-            <option value="America/Los_Angeles">London</option>
-            <option value="Australia/Sydney">Sydney</option>
+            <option value="America/Buenos_Aires">Buenos Aires 💃🏼</option>
+            <option value="America/Los_Angeles">Los Angeles 🎬</option>
+            <option value="Europe/Moscow">Moscow 🪆</option>
+            <option value="America/New_York">New York 🗽</option>
+            <option value="Australia/Perth">Perth 🕷️</option>
+            <option value="Australia/Sydney">Sydney 🦘</option>
+            <option value="Asia/Tokyo">Tokyo 🌸</option>
+            <option value="Europe/Zurich">Zürich 🫕</option>
         </select>
 
 
-        <div class="cities" id="cities">
-            <div class="city" id="los-angeles">
+        <div class="cities">
+            <div id="new-city">
+            </div>
+
+            <div class="city" id="local">
                 <div>
-                    <h2>Los Angeles</h2>
+                    <h2 class="cityName"></h2>
                     <div class="date"></div>
                 </div>
                 <div class="time"></div>
             </div>
             
 
-            <div class="city" id="paris">
+            <div class="city" id="new-york">
                 <div>
-                    <h2>Paris</h2>
+                    <h2>New York</h2>
                     <div class="date"></div>
                 </div>
                 <div class="time"></div>

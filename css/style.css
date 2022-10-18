@@ -14,8 +14,7 @@
 
 /* General styles */
 
-body,
-html {
+body {
   background: linear-gradient(
     109.6deg,
     var(--primary) 11.2%,
@@ -80,6 +79,7 @@ select:focus {
 footer {
   text-align: center;
   color: rgba(39, 52, 69, 0.5);
+  padding-bottom: 5rem;
 }
 
 /* Classes */
@@ -92,6 +92,16 @@ footer {
 }
 
 .city {
+  margin: 2rem auto 0;
+  padding-bottom: 1rem;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+}
+
+.new-city {
   margin: 2rem auto 0;
   padding-bottom: 1rem;
   width: 80%;
