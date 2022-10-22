@@ -1,4 +1,4 @@
-# world-clock
+# World Clock App
 
 ## Project Description
 
@@ -12,15 +12,15 @@
 - I used the **moment.js** library for formatting the dates and times
 - I used the **moment.js timezone** library for the different timezones
 - Dark and light modes are available in the app
-- You can view all the timezones
-- You also get a random image when you select a new timezone from the dropdown
+- You can view **all timezones**
+- You also get a **random image** when you select a new timezone from the dropdown
 
 ### 2. Usage
 
-- You can **access** the web page in any browser with an internet connection; no need to install anything.
+- You can **access** the web page in any browser with an internet connection
 - The app displays the time and date for three locations. The top one is for your **current location**.
 - You can use the **dropdown** to select any timezone. You will see the time and date in the selected timezone immediately along with a new picture.
-- You can use the reset button to go back to the initial view.
+- You can use the **reset** button to go back to the initial view.
 - You can use the **Sun** or **Moon** icon in the top right corner to switch between **light** and **dark** modes.
 
 ![Starting page of the World Clock](/src/Screenshot.jpg)
