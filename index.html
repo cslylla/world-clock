@@ -27,13 +27,16 @@
                 language
             </span>
 
-            <h1>World Clock</h1>
+            <h1>
+                <a href="/">World Clock</a>
+            </h1>
 
             <span class="material-symbols-outlined">
                 schedule
             </span>
         </div>  
 
+        <div class="select-box">
         <select name="citySelector" id="citySelector">
             <option value="">Select a city...</option>
             <option value="current">📌 My location</option>
@@ -59,15 +62,19 @@
             <option value="America/Los_Angeles">🎬 Los Angeles (UTC-7)</option>
             <option value="America/Anchorage">🎏 Anchorage (UTC-8)</option>
             <option value="America/Adak">🎑 Adak (UTC-9)</option>
-            <option value="Pacific/Honolulu">🤿Honolulu (UTC-10)</option>
-            <option value="Pacific/Midway">🎣Midway (UTC-11)</option>
+            <option value="Pacific/Honolulu">🤿 Honolulu (UTC-10)</option>
+            <option value="Pacific/Midway">🎣 Midway (UTC-11)</option>
         </select>
 
+        <button class="reset-button">
+            <a href="/"><span class="material-symbols-outlined reset-icon">
+                restart_alt
+            </span></a>
+        </button>
+        </div>
 
-        <div class="cities">
-            <div id="new-city">
-            </div>
 
+        <div class="cities" id="cities">
             <div class="city" id="local">
                 <div>
                     <h2 class="cityName"></h2>
@@ -75,7 +82,14 @@
                 </div>
                 <div class="time"></div>
             </div>
-            
+
+            <div class="city" id="tokyo">
+                <div>
+                    <h2 class="cityName">Tokyo</h2>
+                    <div class="date"></div>
+                </div>
+                <div class="time"></div>
+            </div>
 
             <div class="city" id="new-york">
                 <div>
@@ -85,7 +99,6 @@
                 <div class="time"></div>
             </div>
         </div>
-        
 
     </main>
     

@@ -17,6 +17,18 @@ function updateTime() {
       .format("h:mm:ss [<small>]A[</small>]");
   }
 
+  //Tokyo
+  let tokyoElement = document.querySelector("#tokyo");
+  if (tokyoElement) {
+    let tokyoDateElement = tokyoElement.querySelector(".date");
+    let tokyoTimeElement = tokyoElement.querySelector(".time");
+    let tokyoTime = moment().tz("Asia/Tokyo");
+    tokyoDateElement.innerHTML = tokyoTime.format("dddd, MMMM Mo, YYYY");
+    tokyoTimeElement.innerHTML = tokyoTime.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
+  }
+
   //New York
   let newYorkElement = document.querySelector("#new-york");
   if (newYorkElement) {
@@ -44,19 +56,26 @@ function updateCity(event) {
     }
     let city = timeZone.replace("_", " ").split("/")[1];
     let cityDateTime = moment.tz(timeZone);
-    let newCityElement = document.querySelector("#new-city");
+    let newCityElement = document.querySelector("#cities");
     newCityElement.innerHTML = `
-            <div>
-                <h2>${city}</h2>
-                <div class="date">${cityDateTime.format(
-                  "dddd, MMMM Mo, YYYY"
-                )}</div>
-            </div>
-            <div class="time">${cityDateTime.format(
-              "h:mm:ss"
-            )}<small>${cityDateTime.format("A")}</small></div>
+      <div class="cities" id="cities">
+          <div class="new-city">
+                <div>
+                    <h2 class="cityName">${city}</h2>
+                    <div class="date">${cityDateTime.format(
+                      "dddd, MMMM Mo, YYYY"
+                    )}</div>
+                </div>
+                <div class="time">${cityDateTime.format(
+                  "h:mm:ss"
+                )}<small>${cityDateTime.format("A")}</small></div>
+          
+      </div>
+      <img src="/src/clock_image.svg" alt="Clock drawing" class="clock-image">
+
+
+
     `;
-    newCityElement.classList.add("city");
   }
 }
 
