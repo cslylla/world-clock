@@ -30,12 +30,18 @@ body {
 
 .material-symbols-outlined {
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
-}
-
-.material-symbols-outlined {
-  color: var(--secondary);
+  color: var(--secondary-dark);
   font-size: 46px;
   margin: 1rem;
+  transition: var(--transition);
+}
+
+.material-symbols-outlined:hover {
+  transform: rotate(360deg);
+}
+
+.title-icon:hover {
+  cursor: default;
 }
 
 .reset-icon {
@@ -48,30 +54,6 @@ body {
 
 .reset-icon:hover {
   color: var(--dark);
-}
-
-.reset-button {
-  background-color: var(--secondary-dark);
-  border: none;
-  border-radius: 10px;
-  box-shadow: var(--box-shadow);
-  transition: var(--transition);
-}
-
-.reset-button:hover {
-  background-color: var(--primary);
-}
-
-.reset-button:focus {
-  outline: none !important;
-  border: 3px solid var(--dark);
-}
-
-.select-box {
-  margin: 0 auto;
-  width: 80%;
-  display: flex;
-  justify-content: space-between;
 }
 
 /* Typography */
@@ -97,20 +79,7 @@ main {
   margin: 6rem auto 1rem;
   border-radius: 10px;
   box-shadow: var(--box-shadow);
-}
-
-select {
-  width: 85%;
-  padding: 0.5rem;
-  border-radius: 4px;
-  font-size: 1.2rem;
-  background-color: var(--light);
-  border: 3px solid rgba(39, 53, 70, 0.2);
-}
-
-select:focus {
-  outline: none !important;
-  border: 3px solid var(--secondary-dark);
+  position: relative;
 }
 
 footer {
@@ -121,11 +90,51 @@ footer {
 
 /* Classes */
 
+.theme-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: transparent;
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: none;
+  transition: var(--transition);
+}
+
+.theme-button:hover {
+  cursor: pointer;
+}
+
 .title {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 2rem;
+  transition: var(--transition);
+}
+
+.select-box {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.reset-button {
+  background-color: var(--secondary-dark);
+  border: none;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+  transition: var(--transition);
+}
+
+.reset-button:hover {
+  background-color: var(--primary);
+}
+
+.reset-button:focus {
+  outline: none !important;
+  border: 3px solid var(--dark);
 }
 
 .city {
@@ -135,7 +144,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+  border-bottom: 2px solid rgba(153, 0, 39, 0.2);
 }
 
 .city:last-child {
@@ -149,13 +158,6 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.clock-image {
-  width: 40%;
-  height: auto;
-  margin: 2rem 2rem 0 2rem;
-  text-align: center;
 }
 
 .time {
@@ -178,10 +180,31 @@ footer {
   text-align: left;
 }
 
+.clock-image {
+  width: 40%;
+  height: auto;
+  margin: 2rem 2rem 0 2rem;
+  text-align: center;
+}
+
 /* Elements */
 
+select {
+  width: 85%;
+  padding: 0.5rem;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  background-color: var(--light);
+  border: 3px solid var(--secondary-dark);
+}
+
+select:focus {
+  outline: none !important;
+  border: 3px solid var(--primary);
+}
+
 a {
-  color: var(--secondary);
+  color: var(--secondary-dark);
   text-decoration: none;
   font-weight: bold;
   transition: var(--transition);
@@ -189,4 +212,52 @@ a {
 
 a:hover {
   color: var(--secondary-light);
+}
+
+/* Dark theme */
+.dark {
+  background-color: var(--dark);
+  color: var(--light);
+}
+
+.dark a {
+  color: var(--primary);
+}
+
+.dark a:hover {
+  color: var(--primary-light);
+}
+
+.dark .material-symbols-outlined {
+  color: var(--primary);
+}
+
+.dark .reset-icon {
+  color: var(--dark);
+}
+
+.dark .reset-icon:hover {
+  color: var(--light);
+}
+
+.dark .reset-button {
+  background-color: var(--primary);
+}
+
+.dark .reset-button:hover {
+  background-color: var(--secondary);
+}
+
+.dark .city {
+  border-bottom: 2px solid rgba(255, 219, 47, 0.5);
+}
+
+.dark select {
+  background-color: var(--dark);
+  color: var(--light);
+  border: 3px solid var(--primary);
+}
+
+.dark select:focus {
+  border: 3px solid var(--secondary);
 }
